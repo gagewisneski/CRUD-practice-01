@@ -1,0 +1,17 @@
+<%= form_tag "/stuffs/#{@stuff.id}", method: :patch do %>
+  <div>
+    <%= text_field_tag :name, "#{@stuff.name}" %>
+  </div>
+
+  <div>
+    <%= text_field_tag :price, "#{@stuff.price}" %>
+  </div>
+
+  <div>
+    <%= text_field_tag :description, "#{@stuff.description}" %>
+  </div>
+
+  <div>
+    <%= submit_tag "Save edit" %>
+  </div>
+<% end %>

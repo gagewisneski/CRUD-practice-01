@@ -1,0 +1,6 @@
+<h1><%= @stuff.name %></h1>
+<h2><%= @stuff.price %></h2>
+<h3><%= @stuff.description %></h3>
+<%= link_to "Edit", "stuffs/#{@stuff.id}/edit" %>
+<%= link_to "Destroy", "stuffs/#{@stuff.id}", method: :delete %>
+<%= link_to "Home", "/" %>

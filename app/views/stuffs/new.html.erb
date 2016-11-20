@@ -1,0 +1,19 @@
+Create a new stuff
+<%= form_tag "/stuffs", method: :post do %>
+  <div>
+    <%= text_field_tag :name, "Stuff Name" %>
+  </div>
+
+  <div>
+    <%= text_field_tag :price, "Price" %>
+  </div>
+
+  <div>
+    <%= text_field_tag :description, "Description" %>
+  </div>
+
+  <div>
+    <%= submit_tag "Save Stuff" %>
+  </div>
+
+<% end %>
